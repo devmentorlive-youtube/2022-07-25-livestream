@@ -15,7 +15,7 @@ function Filterable(Component, array, key, ...rest) {
         type="text"
         value=""
         placeholder="Search..."
-        onChnage={(e) => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}
       />
       <Component {...{ ...rest, [key]: filter(array) }} />
     </>
